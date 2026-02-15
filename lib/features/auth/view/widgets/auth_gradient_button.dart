@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:spotify_clone_proj/core/theme/app_pallete.dart';
 
-class GradientButton extends StatelessWidget {
-  const GradientButton({super.key});
-
+class AuthGradientButton extends StatelessWidget {
+  final String buttontext;
+  const AuthGradientButton({super.key, required this.buttontext});
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -23,8 +23,8 @@ class GradientButton extends StatelessWidget {
           shadowColor: Pallete.transparentColor,
         ),
         child: Text(
-          "Sign Up",
-          style: TextStyle(
+          buttontext,
+          style: const TextStyle(
             fontSize: 17,
             fontWeight: FontWeight.w600,
             color: Pallete.whiteColor,

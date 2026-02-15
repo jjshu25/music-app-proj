@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:spotify_clone_proj/features/auth/view/pages/login_page.dart';
 import 'package:spotify_clone_proj/features/auth/view/pages/signup_page.dart';
 import 'package:spotify_clone_proj/core/theme/app_theme.dart';
 
@@ -9,13 +10,12 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: AppTheme.darkThemeMode,
-      home: const SignupPage(),
+      home: const LoginPage(),
     );
   }
 }
